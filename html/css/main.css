@@ -6,12 +6,12 @@
 :root {
   --dw-dark: #212529;
   --dw-text: #494e53;
-  --dw-green: #21c679;
-  --dw-green-rgb: 33, 198, 121;
-  --dw-green-alt: #3fb971;
+  --dw-green: #2f6fed;
+  --dw-green-rgb: 47, 111, 237;
+  --dw-green-alt: #2559c9;
   --dw-blue: #3e7cc5;
   --dw-orange: #eca564;
-  --dw-bg-mint: #f4f8f6;
+  --dw-bg-mint: #eef3fd;
   --dw-bg-gray: #fafafa;
   --dw-border: #e7e7e7;
   --dw-white: #ffffff;
