@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?><svg width="65" height="64" viewBox="0 0 65 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="32.5" cy="32" r="32" fill="#FAFAFA"></circle>
+<path opacity="0.2" fill-rule="evenodd" clip-rule="evenodd" d="M50.7797 34.6617C51.2942 37.6859 51.3738 40.5775 50.4704 43.5056C49.4626 46.7721 48.2694 50.0789 45.4359 51.9815C42.0353 54.2648 37.9289 55.4523 33.9142 54.6223C29.1042 53.6279 23.7039 51.6806 21.8766 47.111C20.0655 42.5816 22.8644 37.6268 25.4753 33.5179C27.5732 30.2163 31.225 28.831 34.6677 26.9812C38.6711 24.83 42.7107 20.0899 46.8199 22.0488C50.9499 24.0175 50.0114 30.1462 50.7797 34.6617Z" fill="#3E7CC5"></path>
+<path d="M44.1313 24.6557C45.5238 26.7618 46.3346 29.2862 46.3346 32.0001C46.3346 39.3639 40.3651 45.3334 33.0013 45.3334C25.6375 45.3334 19.668 39.3639 19.668 32.0001C19.668 24.6363 25.6375 18.6667 33.0013 18.6667C35.7148 18.6667 38.2389 19.4773 40.3449 20.8695" stroke="#3E7CC5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+<path d="M33 38.6666C36.68 38.6666 39.6667 35.6799 39.6667 31.9999C39.6667 28.3199 36.68 25.3333 33 25.3333" stroke="#3E7CC5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+<path d="M32.9987 25.3333C29.3187 25.3333 26.332 28.3199 26.332 31.9999C26.332 35.6799 29.3187 38.6666 32.9987 38.6666" stroke="#3E7CC5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+<path d="M33.6953 31.1721L40.8894 23.9781" stroke="#3E7CC5" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+<path d="M48.8672 20.1507L44.7168 24.301L40.8892 23.9782L40.5664 20.1507L44.7168 16.0002L45.0396 19.8278L48.8672 20.1507Z" stroke="#3E7CC5" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+<g opacity="0.2">
+<rect x="39.6777" y="10.2893" width="1.34687" height="4.04062" rx="0.673436" transform="rotate(-86.7156 39.6777 10.2893)" fill="#3E7CC5"></rect>
+<rect x="41.1758" y="7.677" width="1.34687" height="4.04062" rx="0.673436" transform="rotate(3.28438 41.1758 7.677)" fill="#3E7CC5"></rect>
+</g>
+<g opacity="0.2">
+<rect x="9.50781" y="44.4573" width="1" height="3" rx="0.5" transform="rotate(-87.2188 9.50781 44.4573)" fill="#3E7CC5"></rect>
+<rect x="10.6035" y="42.5078" width="1" height="3" rx="0.5" transform="rotate(2.78118 10.6035 42.5078)" fill="#3E7CC5"></rect>
+</g>
+<g opacity="0.2">
+<rect x="39.9902" y="55.6973" width="1" height="3" rx="0.5" transform="rotate(-19.0166 39.9902 55.6973)" fill="#3E7CC5"></rect>
+<rect x="42.207" y="55.9912" width="1" height="3" rx="0.5" transform="rotate(70.9834 42.207 55.9912)" fill="#3E7CC5"></rect>
+</g>
+<circle opacity="0.2" r="2" transform="matrix(-1 0 0 1 56 38)" stroke="#3E7CC5"></circle>
+<circle opacity="0.2" cx="15.5" cy="14.5" r="1.5" transform="rotate(-180 15.5 14.5)" stroke="#3E7CC5"></circle>
+</svg>
