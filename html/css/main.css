@@ -4,7 +4,7 @@
    ========================================================================== */
 
 :root {
-  --dw-dark: #212529;
+  --dw-dark: #221e25;
   --dw-text: #494e53;
   --dw-green: #2f6fed;
   --dw-green-rgb: 47, 111, 237;
@@ -909,7 +909,7 @@ p {
    ========================================================================== */
 
 .section-dark {
-  background: #243127;
+  background: #554a65;
   color: #fff;
 }
 
@@ -1499,7 +1499,7 @@ p {
 
 .stat-card {
   border-radius: 16px;
-  background: #324739;
+  background: #2e283d;
   color: #fff;
   padding: 32px;
   text-align: center;
@@ -1650,7 +1650,7 @@ p {
 
 .testimonial-card {
   border-radius: 12px;
-  background: #324739;
+  background: #2e283d;
   padding: 20px;
 }
 
