@@ -63,7 +63,9 @@
   var counters = document.querySelectorAll("[data-count-to]");
   if (counters.length) {
     var animateCount = function (el) {
-      var target = parseInt(el.getAttribute("data-count-to"), 10);
+      var raw = el.getAttribute("data-count-to");
+      var target = parseFloat(raw);
+      var decimals = (raw.split(".")[1] || "").length;
       var suffix = el.getAttribute("data-count-suffix") || "";
       var duration = 1500;
       var startTime = null;
@@ -71,7 +73,8 @@
         if (startTime === null) startTime = timestamp;
         var progress = Math.min((timestamp - startTime) / duration, 1);
         var eased = 1 - Math.pow(1 - progress, 3);
-        el.textContent = Math.round(target * eased) + suffix;
+        var value = (target * eased).toFixed(decimals).replace(".", ",");
+        el.textContent = value + suffix;
         if (progress < 1) {
           window.requestAnimationFrame(step);
         }
@@ -95,6 +98,44 @@
       counters.forEach(animateCount);
     }
   }
+
+  var lazyVideos = document.querySelectorAll("video[data-lazy-video]");
+  if (lazyVideos.length) {
+    var loadVideo = function (video) {
+      if (video.dataset.src) {
+        video.src = video.dataset.src;
+      }
+      video.querySelectorAll("source[data-src]").forEach(function (source) {
+        source.src = source.dataset.src;
+      });
+      video.load();
+      if (video.hasAttribute("autoplay")) {
+        video.play().catch(function () {});
+      }
+    };
+
+    if ("IntersectionObserver" in window) {
+      var videoObserver = new IntersectionObserver(function (entries, observer) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            loadVideo(entry.target);
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { rootMargin: "200px 0px" });
+      lazyVideos.forEach(function (video) {
+        videoObserver.observe(video);
+      });
+    } else {
+      lazyVideos.forEach(loadVideo);
+    }
+  }
+
+  document.querySelectorAll("video[data-unmute-on-play]").forEach(function (video) {
+    video.addEventListener("play", function () {
+      video.muted = false;
+    }, { once: true });
+  });
 
   document.querySelectorAll(".tab-showcase").forEach(function (widget) {
     var buttons = widget.querySelectorAll(".tab-showcase__list button");

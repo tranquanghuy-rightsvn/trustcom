@@ -1009,6 +1009,19 @@ p {
   border-radius: 16px;
 }
 
+.hero-inline-video {
+  width: 100%;
+  max-width: 480px;
+  margin-bottom: 32px;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.hero-inline-video video {
+  display: block;
+  width: 100%;
+}
+
 /* Hero layout with title+features on the left and a tall portrait video on the right,
    spanning both rows (used on service pages like san-xuat-video-chuyen-doi) */
 .hero-section_container {
@@ -1228,13 +1241,6 @@ p {
   margin-top: 32px;
 }
 
-.highlight-mark {
-  background: #dcdcdc;
-  color: inherit;
-  padding: 0 4px;
-  border-radius: 2px;
-}
-
 /* 3-column feature/services grid (homepage) */
 .services-grid {
   background: var(--dw-bg-gray);
@@ -1342,7 +1348,7 @@ p {
   border-radius: 16px;
 }
 
-/* Video showcase: 2 clips + 2 captions split into an even 2x2 grid */
+/* Video showcase: 4 clips in an even 2x2 grid */
 .showcase__grid--video {
   align-items: stretch;
 }
@@ -1352,6 +1358,7 @@ p {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 10px;
+  width: 100%;
   aspect-ratio: 4 / 5;
   border-radius: 16px;
   overflow: hidden;
@@ -1372,35 +1379,6 @@ p {
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-
-.video-duo__cell--note {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  gap: 12px;
-  padding: 12px;
-}
-
-.video-duo__cell--note-alt {
-  align-items: flex-end;
-  justify-content: flex-end;
-  text-align: right;
-}
-
-.video-duo__cell--note p {
-  width: 100%;
-  margin: 0;
-  font-size: 15px;
-  line-height: 22px;
-  color: rgba(255, 255, 255, 0.8);
-}
-
-.video-duo__arrow {
-  flex-shrink: 0;
-  width: 70px;
-  height: 60px;
 }
 
 .showcase h2 {
